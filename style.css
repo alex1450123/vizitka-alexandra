@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4efe8;
+    color: #222;
+}
+
+header {
+    padding: 24px 8%;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+section {
+    margin-bottom: 42px;
+    padding: 28px;
+    background: white;
+    border-radius: 16px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #e36b43;
+}
+
+img {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 18px;
+}
+
+article {
+    padding: 16px;
+    margin-top: 14px;
+    border-left: 4px solid #e36b43;
+    background: #fff7f0;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #e36b43;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 650px) {
+    header {
+        display: block;
+    }
+
+    nav {
+        margin-top: 16px;
+        flex-wrap: wrap;
+    }
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contacts a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #6c63ff;
+  color: white;
+  text-decoration: none;
+}
+
+.contacts a {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contacts a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+.contacts p {
+  width: 100%;
+  margin: 4px 0;
+}
+
+.email-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.email-copy {
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: #eee8ff;
+    color: #5148d8;
+    cursor: pointer;
+    font: inherit;
+}
+
+.email-copy:hover {
+    background: #ddd4ff;
+}
+.max-link {
+    background: #8b00ff !important;
+}
+
+.vk-link {
+    background: #0077ff !important;
+}
+
+.telegram-link {
+    background: #229ed9 !important;
+}
+.main-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #e36b43;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.main-button:hover {
+    background: #c95532;
+    transform: translateY(-2px);
+}
