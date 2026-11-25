@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт-визитка</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ножницы — парикмахерская</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="logo" href="#home">НОЖНИЦЫ</a>
+      <div class="nav-links">
+        <a href="#services">Услуги</a>
+        <a href="#about">О салоне</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Салон красоты в вашем городе</p>
+      <h1>Стиль, который<br><span>подходит именно вам</span></h1>
+      <p class="hero-text">Стрижки, окрашивание и уход с вниманием к каждой детали.</p>
+      <a class="button" href="#contacts">Записаться</a>
+    </div>
+  </header>
 
-    <header>
-        <h1>Александр — разработчик веб-сайтов визиток</h1>
+  <main>
+    <section id="services" class="section">
+      <p class="eyebrow">Наши услуги</p>
+      <h2>Красота начинается<br>с заботы о себе</h2>
+      <div class="cards">
+        <article class="card"><div class="icon">✂</div><h3>Стрижка</h3><p>Подберём форму и укладку, которые подчеркнут ваш характер.</p><strong>от 1 500 ₽</strong></article>
+        <article class="card"><div class="icon">✦</div><h3>Окрашивание</h3><p>Создадим новый образ бережно и с учётом состояния волос.</p><strong>от 3 500 ₽</strong></article>
+        <article class="card"><div class="icon">♡</div><h3>Уход</h3><p>Восстановление, блеск и мягкость для ваших волос.</p><strong>от 1 200 ₽</strong></article>
+      </div>
+    </section>
 
-        <nav>
-            <a href="#about">Обо мне</a>
-            <a href="#services">Услуги</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
-    </header>
+    <section id="about" class="about section">
+      <div><p class="eyebrow">О салоне</p><h2>Место, где можно<br>выдохнуть</h2></div>
+      <p>Мы создаём спокойную атмосферу, слушаем ваши пожелания и честно рассказываем, как сохранить результат дома. Каждый визит начинается с консультации и заканчивается ощущением «это точно я».</p>
+    </section>
 
-    <main>
-        <section id="about">
-            <h2>Обо мне</h2>
-            <p>Создаю простые и понятные сайты-визитки для людей и небольших проектов.</p>
-            <a class="main-button" href="#contacts">Связаться со мной</a>
-            <img src="images/logo.jpg" alt="логотип сайта">
-        </section>
+    <section class="section team-section">
+      <p class="eyebrow">Наша команда</p><h2>Ваш образ —<br>в надёжных руках</h2>
+      <div class="team"><div class="person"><div class="avatar avatar-one">А</div><h3>Анна</h3><p>Стилист, колорист</p></div><div class="person"><div class="avatar avatar-two">М</div><h3>Марина</h3><p>Парикмахер-стилист</p></div><div class="person"><div class="avatar avatar-three">Е</div><h3>Елена</h3><p>Мастер по уходу</p></div></div>
+    </section>
 
-        <section id="services">
-            <h2>Мои услуги</h2>
-
-            <article>
-                <h3>Сайт-визитка</h3>
-                <p>Простая и аккуратная страница о человеке или проекте.</p>
-            </article>
-
-            <article>
-                <h3>лендинг</h3>
-                <p>Одностраничный сайт для услуги, товара или проекта.</p>
-            </article>
-
-            <article>
-                <h3>Дизайн и оформление</h3>
-                <p>Подбор цветов, шрифтов, фотографий и расположения блоков.</p>
-            </article>
-
-            <article>
-                <h3>Обновление сайта</h3>
-                <p>Замена текста, фотографий, услуг и контактной информации.</p>
-            </article>
-            <article>
-                <h3>Поддержка сайта</h3>
-                <p>Исправление ошибок и небольшие изменения после запуска сайта.</p>
-            </article>
-        </section>
-
-        <section id="contacts" class="contacts">
-                <h2>Связаться со мной</h2>
-                <p>Выберите удобный способ связи:</p>
-                <a class="max-link" href="https://max.ru/u/f9LHodD0cOJFEJOg2TxZtoh_ZhavROIvJkJAw3m9XLz_cLV2oTKbk-NSLwA" target="_blank">MAX</a>
-                <a class="vk-link" href="https://vk.ru/id583321671" target="_blank">VK</a>
-                <a class="telegram-link" href="https://t.me/alex_webmaster_site" target="_blank">Telegram</a>
-
-                <p class="email-row">Почта 1: <button class="email-copy" type="button" data-email="alexdub207@gmail.com">alexdub207@gmail.com</button></p>
-                <p class="email-row">Почта 2: <button class="email-copy" type="button" data-email="alexanderweb08@mail.ru">alexanderweb08@mail.ru</button></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Мой сайт-визитка</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <section id="contacts" class="contact section">
+      <p class="eyebrow">Запись</p><h2>Готовы к переменам?</h2><p>Оставьте заявку — мы свяжемся с вами и подберём удобное время.</p>
+      <form id="booking-form"><input required type="text" placeholder="Ваше имя"><input required type="tel" placeholder="Телефон"><select><option>Выберите услугу</option><option>Стрижка</option><option>Окрашивание</option><option>Уход</option></select><button class="button" type="submit">Отправить заявку</button></form><p id="form-message" class="form-message"></p>
+    </section>
+  </main>
+  <footer><span>НОЖНИЦЫ</span><span>Ежедневно 9:00–21:00 · +7 900 000-00-00</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>

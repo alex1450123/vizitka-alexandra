@@ -1,23 +1,7 @@
-const button = document.querySelector("#contactButton");
-const message = document.querySelector("#message");
-
-if (button && message) {
-    button.addEventListener("click", function () {
-        message.textContent = "Спасибо! Я свяжусь с вами.";
-    });
-}
-
-document.querySelectorAll(".email-copy").forEach((emailButton) => {
-    emailButton.addEventListener("click", async () => {
-        const email = emailButton.dataset.email;
-        try {
-            await navigator.clipboard.writeText(email);
-            emailButton.textContent = "Скопировано!";
-            setTimeout(() => {
-                emailButton.textContent = email;
-            }, 1500);
-        } catch {
-            emailButton.textContent = "Скопируйте вручную";
-        }
-    });
+const form = document.querySelector('#booking-form');
+const message = document.querySelector('#form-message');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  message.textContent = 'Спасибо! Мы свяжемся с вами для подтверждения записи.';
+  form.reset();
 });
